@@ -53,8 +53,8 @@ This guide covers setting up the project locally and deploying it to Vercel.
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/770nayasharma/llm-code-deployer.git](https://github.com/770nayasharma/llm-code-deployer.git)
-    cd llm-code-deployer
+    git clone [https://github.com/770nayasharma/llm-code-deploy.git](https://github.com/770nayasharma/llm-code-deploy.git)
+    cd llm-code-deploy
     ```
 
 2.  **Create and activate a virtual environment:**
