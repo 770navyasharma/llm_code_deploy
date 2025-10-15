@@ -72,7 +72,7 @@ def generate_code_with_gemini(brief, checks, attachments_content):
 
     Respond ONLY with the complete HTML code inside a single markdown code block. Do not add any explanatory comments.
     """
-    model = genai.GenerativeModel('gemini-1.5-pro-latest')
+    model = genai.GenerativeModel('gemini-2.5-flash')
     response = model.generate_content(prompt)
     try:
         code = re.search(r'```html(.*)```', response.text, re.DOTALL).group(1).strip()
@@ -108,7 +108,7 @@ def revise_code_with_gemini(brief, checks, attachments_content, original_code):
 
     Respond ONLY with the complete and updated HTML code inside a single markdown code block.
     """
-    model = genai.GenerativeModel('gemini-1.5-pro-latest')
+    model = genai.GenerativeModel('gemini-2.5-flash')
     response = model.generate_content(prompt)
     try:
         code = re.search(r'```html(.*)```', response.text, re.DOTALL).group(1).strip()
@@ -138,7 +138,7 @@ def generate_readme_with_gemini(brief):
 
     Respond ONLY with the complete markdown content for the README.md file.
     """
-    model = genai.GenerativeModel('gemini-1.5-pro-latest')
+    model = genai.GenerativeModel('gemini-2.5-flash')
     response = model.generate_content(prompt)
     print("✅ README generated.")
     return response.text
@@ -154,7 +154,7 @@ def revise_readme_with_gemini(brief, original_readme):
     {original_readme}
     Respond ONLY with the complete and updated markdown content for the README.md file.
     """
-    model = genai.GenerativeModel('gemini-1.5-pro-latest')
+    model = genai.GenerativeModel('gemini-2.5-flash')
     response = model.generate_content(prompt)
     print("✅ README revised.")
     return response.text
