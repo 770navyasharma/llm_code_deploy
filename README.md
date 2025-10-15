@@ -21,7 +21,7 @@ The application follows a serverless architecture, receiving a request and orche
 ## ✨ Features
 
 -   **API-Driven Automation:** Fully automated workflow triggered by a single JSON POST request.
--   **Intelligent Code Generation:** Utilizes the Gemini AI (`gemini-1.5-pro-latest`) to generate HTML, CSS, and JavaScript based on a natural language `brief`.
+-   **Intelligent Code Generation:** Utilizes the Gemini AI (`gemini-2.5-flash`) to generate HTML, CSS, and JavaScript based on a natural language `brief`.
 -   **Smart Prompt Engineering:** Enhances AI accuracy by passing `attachments` (like CSV/JSON data) and `checks` (evaluation criteria) directly into the prompt.
 -   **Automated Git & Deployment:** Automatically creates a new public GitHub repository, pushes the generated code, adds an MIT License, and enables GitHub Pages.
 -   **Multi-Round Capability:** Handles both initial `round: 1` build requests and `round: 2` revision requests to update existing code.
@@ -34,7 +34,7 @@ The application follows a serverless architecture, receiving a request and orche
 -   **Backend:** Python 3.9+
 -   **Framework:** Flask
 -   **Deployment:** Vercel (Serverless Functions)
--   **AI Model:** Google Gemini API (`gemini-1.5-pro-latest`)
+-   **AI Model:** Google Gemini API (`gemini-2.5-flash`)
 -   **VCS & Hosting:** GitHub API & GitHub Pages
 
 ---
